@@ -26,7 +26,7 @@ class _LetIsStartScreenState extends State<LetIsStartScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Welcome To  Do It !",
+                Text("Welcome To \nDo It !",
                 textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0xff24252C),
@@ -40,7 +40,7 @@ class _LetIsStartScreenState extends State<LetIsStartScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Ready to conquer your tasks? Let's Do  It together.",
+                Text("Ready to conquer your tasks? Let's Do \nIt together.",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Color(0xff6E6A7C),
