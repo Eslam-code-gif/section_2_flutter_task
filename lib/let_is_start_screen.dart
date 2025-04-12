@@ -14,8 +14,8 @@ class _LetIsStartScreenState extends State<LetIsStartScreen> {
       backgroundColor: Color(0xffF3F5F4),
       body: SizedBox(
         width: double.infinity,
-        height: double.infinity,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(height: 90,),
             Image.asset("assets/photo.png",
