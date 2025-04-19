@@ -8,7 +8,7 @@ class EmTextFormField extends StatefulWidget {
   const EmTextFormField({
     super.key,
     required this.label,
-    required this.hintText,
+     this.hintText,
     this.onSaved,
     this.validator,
     this.keyboardType,
@@ -19,7 +19,7 @@ class EmTextFormField extends StatefulWidget {
   });
 
   final String label; //*
-  final String hintText; //*
+  final String? hintText; //*
   final void Function(String?)? onSaved; //*
   final void Function(String?)? onChanged; //*
   final String? Function(String?)? validator; //*
@@ -92,7 +92,7 @@ class _EmTextFormFieldState extends State<EmTextFormField> {
             label: Text(widget.label,
                 style: AppTextStyles.secondaryColorW200Size14
             ),
-            hintText: widget.hintText,
+            hintText: widget.hintText?? '',
             hintStyle: AppTextStyles.secondaryColorW200Size14,
           ),
         ),
