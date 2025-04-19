@@ -6,6 +6,7 @@ import 'package:section_2_flutter_task/core/constants/fonts.dart';
 import 'package:section_2_flutter_task/core/constants/svgs.dart';
 import 'package:section_2_flutter_task/core/constants/texts.dart';
 import 'package:section_2_flutter_task/presentation/change_password_screen.dart';
+import 'package:section_2_flutter_task/presentation/home_first_screen.dart';
 import 'package:section_2_flutter_task/presentation/widgets/elevated_button.dart';
 
 class LetIsStartScreen extends StatefulWidget {
@@ -56,7 +57,7 @@ class _LetIsStartScreenState extends State<LetIsStartScreen> {
             onPressed: (){
                 Navigator.push(context, 
                 MaterialPageRoute(
-                    builder: (context) => ChangePasswordScreen(),
+                    builder: (context) => HomeFirstScreen(),
                 ),
                 );
             },
