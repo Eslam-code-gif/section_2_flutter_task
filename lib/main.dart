@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:section_2_flutter_task/let_is_start_screen.dart';
+import 'package:section_2_flutter_task/presentation/let_is_start_screen.dart';
 
 void main() {
   runApp(const MyApp());
