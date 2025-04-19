@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:section_2_flutter_task/core/constants/colors.dart';
+import 'package:section_2_flutter_task/core/constants/fonts.dart';
 import 'package:section_2_flutter_task/core/constants/svgs.dart';
 import 'package:section_2_flutter_task/core/constants/texts.dart';
+import 'package:section_2_flutter_task/presentation/widgets/elevated_button.dart';
 
 class LetIsStartScreen extends StatefulWidget {
   const LetIsStartScreen({super.key});
@@ -33,11 +35,7 @@ class _LetIsStartScreenState extends State<LetIsStartScreen> {
               children: [
                 Text(AppTexts.welcomeMessage,
                 textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: AppColors.primaryText,
-                    fontSize: 24,
-                    fontWeight: FontWeight.w400,
-                  ),
+                  style: AppTextStyles.primaryColorW400Size24,
                 )
               ],
             ),
@@ -47,31 +45,17 @@ class _LetIsStartScreenState extends State<LetIsStartScreen> {
               children: [
                 Text(AppTexts.readyTo,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: AppColors.secondaryText,
-                  fontWeight: FontWeight.w500,
-                  fontSize: 16,
-                ),
+                style: AppTextStyles.secondaryColorW500Size16,
                 ),
               ],
             ),
             SizedBox(height: 68.h,),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(331, 48.01129913330078),
-                backgroundColor: Color(0xff149954),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(14),
-                )
-              ),
-                onPressed: (){},
-                child: Text(AppTexts.letsStartButton,
-                style: TextStyle(
-                  fontSize: 19,
-                  fontWeight: FontWeight.w300,
-                  color: AppColors.white,
-                ),
-                )
+            MyElevatedButton(
+              title: AppTexts.letsStartButton,
+            onPressed: (){},
+               left: 22,
+              right: 22,
+
             ),
           ],
         ),
