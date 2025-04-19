@@ -4,6 +4,10 @@
   static const String letsStartButton = "Let’s Start";
   static const String loginButton = "Login";
   static const String registerButton = "Register";
+  static const String updateButton = "Update";
+  static const String nameLabel = "Username";
+  static const String nameHint = "Abdelrahem";
+
 
 
  }

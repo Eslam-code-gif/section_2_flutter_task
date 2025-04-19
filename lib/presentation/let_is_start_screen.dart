@@ -5,6 +5,7 @@ import 'package:section_2_flutter_task/core/constants/colors.dart';
 import 'package:section_2_flutter_task/core/constants/fonts.dart';
 import 'package:section_2_flutter_task/core/constants/svgs.dart';
 import 'package:section_2_flutter_task/core/constants/texts.dart';
+import 'package:section_2_flutter_task/presentation/update_profile_screen.dart';
 import 'package:section_2_flutter_task/presentation/widgets/elevated_button.dart';
 
 class LetIsStartScreen extends StatefulWidget {
@@ -52,7 +53,13 @@ class _LetIsStartScreenState extends State<LetIsStartScreen> {
             SizedBox(height: 68.h,),
             MyElevatedButton(
               title: AppTexts.letsStartButton,
-            onPressed: (){},
+            onPressed: (){
+                Navigator.push(context, 
+                MaterialPageRoute(
+                    builder: (context) => UpdateProfileScreen(),
+                ),
+                );
+            },
                left: 22,
               right: 22,
 

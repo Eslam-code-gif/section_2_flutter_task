@@ -14,9 +14,19 @@ class AppTextStyles {
     fontSize: 24.sp,
     color: AppColors.primaryText,
   );
+  static TextStyle primaryColorW300Size14 = GoogleFonts.lexendDeca(
+    fontWeight: FontWeight.w300,
+    fontSize: 14.sp,
+    color: AppColors.primaryText,
+  );
   static TextStyle secondaryColorW500Size16 = GoogleFonts.lexendDeca(
     fontWeight: FontWeight.w500,
     fontSize: 16.sp,
+    color: AppColors.secondaryText,
+  );
+  static TextStyle secondaryColorW200Size14 = GoogleFonts.lexendDeca(
+    fontWeight: FontWeight.w200,
+    fontSize: 14.sp,
     color: AppColors.secondaryText,
   );
 
