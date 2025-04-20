@@ -44,12 +44,12 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 },
                 validator: (value) {
                   RegExp regex = RegExp(
-                      r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$');
+                      AppTexts.passwordRegExp);
                   if ( value == null || value.isEmpty) {
-                    return 'Please enter your Old password';
+                    return AppTexts.oldPasswordEmpty;
                   } else {
                     if (!regex.hasMatch(value)) {
-                      return 'Old password must be at least 8 characters and include upper\n/lower case, number, and special character';
+                      return AppTexts.oldPasswordError;
                     } else {
                       return null;
                     }
@@ -71,7 +71,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 },
                 validator: (value) {
                 RegExp regex = RegExp(
-                    r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$');
+                    AppTexts.passwordRegExp);
                 if ( value == null || value.isEmpty) {
                   return 'Please enter your New password';
                 } else {

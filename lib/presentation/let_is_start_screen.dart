@@ -57,7 +57,7 @@ class _LetIsStartScreenState extends State<LetIsStartScreen> {
             onPressed: (){
                 Navigator.push(context, 
                 MaterialPageRoute(
-                    builder: (context) => HomeFirstScreen(),
+                    builder: (context) => ChangePasswordScreen(),
                 ),
                 );
             },
