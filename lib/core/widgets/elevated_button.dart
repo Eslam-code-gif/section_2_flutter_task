@@ -9,13 +9,13 @@ class MyElevatedButton extends StatelessWidget {
     super.key,
     required this.title,
     this.onPressed,
-    required this.right,
-    required this.left
+     this.right,
+     this.left
   });
   final String title;
   final void Function()? onPressed;
-  final double right;
-  final double left;
+  final double? right;
+  final double? left;
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +24,8 @@ class MyElevatedButton extends StatelessWidget {
       height: 48.01129913330078.h,
       child: Padding(
         padding:  EdgeInsets.only(
-          left: left.r,
-          right: right.r,
+          left: left??0.r,
+          right: right??0.r,
         ).r,
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(

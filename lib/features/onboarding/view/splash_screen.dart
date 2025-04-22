@@ -6,6 +6,7 @@ import 'package:section_2_flutter_task/features/onboarding/view/let_is_start_scr
 import '../../../core/theme/colors.dart';
 import '../../../core/utils/app_assets.dart';
 class SplashScreen extends StatefulWidget {
+  static const String routName = 'SplashScreen';
   const SplashScreen({super.key});
 
   @override
@@ -21,10 +22,7 @@ class _SplashScreen extends State <SplashScreen>{
     Future.delayed(
         Duration(seconds: 4), ()
     {
-      Navigator.pushReplacement(context,
-          MaterialPageRoute(
-            builder: (context) => LetIsStartScreen(),
-          ));
+      Navigator.pushReplacementNamed(context, LetIsStartScreen.routName);
     }
     );
   }

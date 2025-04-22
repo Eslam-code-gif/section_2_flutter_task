@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:section_2_flutter_task/features/profile/view/change_password_screen.dart';
+import 'package:section_2_flutter_task/features/auth/view/register_screen.dart';
 
 import '../../../core/localization/app_string/texts.dart';
 import '../../../core/theme/colors.dart';
@@ -10,6 +10,7 @@ import '../../../core/utils/fonts.dart';
 import '../../../core/widgets/elevated_button.dart';
 
 class LetIsStartScreen extends StatefulWidget {
+  static const String routName= 'LetIsStartScreen';
   const LetIsStartScreen({super.key});
 
   @override
@@ -55,11 +56,7 @@ class _LetIsStartScreenState extends State<LetIsStartScreen> {
             MyElevatedButton(
               title: AppTexts.letsStartButton,
             onPressed: (){
-                Navigator.push(context, 
-                MaterialPageRoute(
-                    builder: (context) => ChangePasswordScreen(),
-                ),
-                );
+                Navigator.pushNamed(context, RegisterScreen.routName);
             },
                left: 22,
               right: 22,

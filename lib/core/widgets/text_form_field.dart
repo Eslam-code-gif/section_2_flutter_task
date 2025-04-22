@@ -15,8 +15,8 @@ class EmTextFormField extends StatefulWidget {
     this.keyboardType,
     this.onChanged,
     required this.textInputAction,
-    required this.right,
-    required this.left,
+     this.right,
+     this.left,
   });
 
   final String label; //*
@@ -26,8 +26,8 @@ class EmTextFormField extends StatefulWidget {
   final String? Function(String?)? validator; //*
   final TextInputType? keyboardType; //*
   final TextInputAction? textInputAction; //*
-  final double right;
-  final double left;
+   final double? right;
+   final double? left;
 
   @override
   State<EmTextFormField> createState() => _EmTextFormFieldState();
@@ -39,8 +39,8 @@ class _EmTextFormFieldState extends State<EmTextFormField> {
   @override
   void initState() {
     super.initState();
-    _left = widget.left;
-    _right = widget.right;
+    _left = widget.left??0;
+    _right = widget.right??0;
   }
 
   @override
