@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:section_2_flutter_task/core/constants/colors.dart';
-import 'package:section_2_flutter_task/core/constants/fonts.dart';
-import 'package:section_2_flutter_task/core/constants/svgs.dart';
-import 'package:section_2_flutter_task/core/constants/texts.dart';
-import 'package:section_2_flutter_task/presentation/change_password_screen.dart';
-import 'package:section_2_flutter_task/presentation/home_first_screen.dart';
-import 'package:section_2_flutter_task/presentation/widgets/elevated_button.dart';
+import 'package:section_2_flutter_task/features/profile/view/change_password_screen.dart';
+
+import '../../../core/localization/app_string/texts.dart';
+import '../../../core/theme/colors.dart';
+import '../../../core/utils/app_assets.dart';
+import '../../../core/utils/fonts.dart';
+import '../../../core/widgets/elevated_button.dart';
 
 class LetIsStartScreen extends StatefulWidget {
   const LetIsStartScreen({super.key});

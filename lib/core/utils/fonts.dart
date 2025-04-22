@@ -1,7 +1,8 @@
  import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:section_2_flutter_task/core/constants/colors.dart';
+
+import '../theme/colors.dart';
 
 class AppTextStyles {
   static TextStyle elevatedButtonTextStyle = GoogleFonts.lexendDeca(

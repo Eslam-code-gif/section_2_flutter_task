@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:section_2_flutter_task/core/constants/colors.dart';
-import 'package:section_2_flutter_task/core/constants/images.dart';
-import 'package:section_2_flutter_task/core/constants/texts.dart';
-import 'package:section_2_flutter_task/presentation/widgets/elevated_button.dart';
-import 'package:section_2_flutter_task/presentation/widgets/text_form_field.dart';
+
+import '../../../core/localization/app_string/texts.dart';
+import '../../../core/theme/colors.dart';
+import '../../../core/utils/app_assets.dart';
+import '../../../core/widgets/elevated_button.dart';
+import '../../../core/widgets/text_form_field.dart';
 
 class UpdateProfileScreen extends StatefulWidget {
   const UpdateProfileScreen({super.key});

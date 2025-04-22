@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:section_2_flutter_task/core/constants/fonts.dart';
 
-import '../../core/constants/colors.dart';
+import '../theme/colors.dart';
+import '../utils/fonts.dart';
+
 
 class EmTextFormField extends StatefulWidget {
   const EmTextFormField({

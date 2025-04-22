@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:section_2_flutter_task/presentation/splash_screen.dart';
+import 'package:section_2_flutter_task/features/onboarding/view/splash_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../core/constants/colors.dart';
-import '../../core/constants/fonts.dart';
+import '../theme/colors.dart';
+import '../utils/fonts.dart';
+
 class MyElevatedButton extends StatelessWidget {
   const MyElevatedButton({
     super.key,
